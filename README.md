@@ -1,4 +1,4 @@
-# cu-cse-325-326
+# CU-CSE-325-326
 Contains Documents of System Analysis &amp; Design for the City University of Bangladesh
 <br/><br/>
 ## [Lab Practical Projects | CSE-326](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Development)
