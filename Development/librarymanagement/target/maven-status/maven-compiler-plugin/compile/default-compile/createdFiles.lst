@@ -1,0 +1,10 @@
+library\cse\cu\librarymanagement\domain\Users.class
+library\cse\cu\librarymanagement\dao\books\booksDAO.class
+library\cse\cu\librarymanagement\controller\RootController.class
+library\cse\cu\librarymanagement\dao\User\usersDAO.class
+library\cse\cu\librarymanagement\config\SpringRootConfig.class
+library\cse\cu\librarymanagement\config\SpringWebConfig.class
+library\cse\cu\librarymanagement\config\DispatcherServletInitializer.class
+library\cse\cu\librarymanagement\dao\books\booksDAOImpl.class
+library\cse\cu\librarymanagement\dao\User\usersDAOImpl.class
+library\cse\cu\librarymanagement\dao\baseDAO.class
