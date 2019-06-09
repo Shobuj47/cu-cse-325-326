@@ -1,1 +1,13 @@
-TestUserDAOSaveDatabase.class
+BookTests\TestBookDAOFindAllDatabase.class
+BookTests\TestBookDAOSaveDatabase.class
+UserTests\TestUserDAOFindByPropertyDatabase.class
+UserTests\TestUserDAOUpdateDatabase.class
+UserTests\TestUserDAOFindAllDatabase.class
+BookTests\TestBookDAOFindByIdDatabase.class
+BookTests\TestBookDAOUpdateDatabase.class
+UserTests\TestUserDAOFindByIdDatabase.class
+BookTests\TestBookDAODeleteDatabase.class
+BookTests\TestBookDAOFindByPropertyDatabase.class
+UserTests\TestUserDAOSaveDatabase.class
+UserTests\TestUserServiceSaveDatabase.class
+UserTests\TestUserDAODeleteDatabase.class

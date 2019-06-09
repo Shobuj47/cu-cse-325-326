@@ -16,7 +16,9 @@ import org.springframework.context.annotation.ComponentScan;
  */
 
 @Configuration
-@ComponentScan(basePackages = {"library.cse.cu.librarymaangement"})
+//@ComponentScan(basePackages = {"library.cse.cu.librarymaangement"})
+//@ComponentScan(basePackages = {"library.cse.cu.librarymanagement.dao"})
+@ComponentScan(basePackages = {"library.cse.cu.librarymanagement.services"})
 public class SpringRootConfig {
  
     @Bean

@@ -5,10 +5,18 @@
  */
 package library.cse.cu.librarymanagement.dao.books;
 
+import java.util.List;
+import library.cse.cu.librarymanagement.domain.Book;
 /**
  *
  * @author Agent47
  */
-public class booksDAO {
-    
+public interface booksDAO {
+    public void saveBook(Book u);
+    public void updateBook(Book u);
+    public void deleteBook(int id);
+    public void deleteBook(Book book);
+    public Book findById(Integer id);
+    public List<Book> findALL();
+    public List<Book> findByProperty(String propertyName, Object obj);
 }
