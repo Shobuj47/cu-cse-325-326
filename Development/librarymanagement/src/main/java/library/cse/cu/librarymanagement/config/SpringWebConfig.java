@@ -20,13 +20,13 @@ import org.springframework.web.servlet.view.JstlView;
  * @author Agent47
  */
 @Configuration
-@ComponentScan(basePackages = {"library.cse.cu"})
+@ComponentScan(basePackages = {"library.cse.cu.librarymanagement"})
 @EnableWebMvc
 public class SpringWebConfig extends WebMvcConfigurerAdapter {
     
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry){
-    
+        registry.addResourceHandler("/WebResources/**").addResourceLocations("/WebResources/");
     }
     
     

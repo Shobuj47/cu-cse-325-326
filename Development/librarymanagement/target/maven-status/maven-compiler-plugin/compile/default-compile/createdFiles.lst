@@ -9,6 +9,7 @@ library\cse\cu\librarymanagement\services\user\UserServiceImpl.class
 library\cse\cu\librarymanagement\domain\Users.class
 library\cse\cu\librarymanagement\controller\RootController.class
 library\cse\cu\librarymanagement\domain\Book.class
+library\cse\cu\librarymanagement\controller\UserController.class
 library\cse\cu\librarymanagement\dao\User\usersDAO.class
 library\cse\cu\librarymanagement\domain\Role.class
 library\cse\cu\librarymanagement\dao\role\roleDAO.class

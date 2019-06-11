@@ -6,12 +6,10 @@
 package library.cse.cu.librarymanagement.dao.User;
 import java.util.List;
 import library.cse.cu.librarymanagement.domain.Users;
-import org.springframework.stereotype.Repository;
 /**
  *
  * @author Agent47
  */
-@Repository
 public interface usersDAO {
     
     public void saveUser(Users u);

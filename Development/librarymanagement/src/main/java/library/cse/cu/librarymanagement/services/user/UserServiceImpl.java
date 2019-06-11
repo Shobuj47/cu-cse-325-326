@@ -5,12 +5,16 @@
  */
 package library.cse.cu.librarymanagement.services.user;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import library.cse.cu.librarymanagement.dao.User.usersDAO;
 import library.cse.cu.librarymanagement.dao.baseDAO;
 import library.cse.cu.librarymanagement.domain.Users;
 import library.cse.cu.librarymanagement.exceptions.UserBlockedException;
+import library.cse.cu.librarymanagement.rowmapper.UserRowMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 /**
@@ -25,13 +29,37 @@ public class UserServiceImpl extends baseDAO implements UserService{
     
     @Override
     public void RegisterUser(Users user) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         userdao.saveUser(user);
     }
 
     @Override
     public Users login(String username, String password) throws UserBlockedException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       String userquery = "SELECT 	`id`,  `username`,  `fname`,  `lname`,  `email`,  `address`,  `cardno`,  "
+               + "`birthdate`,  `valid`,  `validity`,  `maxbookcount`,  `borrowedbookcount`,  `lastlogin`,  `lastupdated`   "
+               + "FROM  `libmanagment`.`users`  "
+               + "WHERE `username` = :LN `password` = :pwd ;";
+       Map m = new HashMap();
+       m.put("ln", username);
+       m.put("pwd", password);
+       
+       try {
+       Users u = getNamedParameterJdbcTemplate().queryForObject(userquery, m, new UserRowMapper());
+       //String rolequery = "SELECT 	`id`,  `userid`,  `roleid`   "
+       //       + "FROM  `libmanagment`.`userroles`  WHERE `userid` = :uid;";
+       //int userid= u.getId();
+       //Map role = new HashMap();
+       //role.put("uid", userid);
+       //Role r = getNamedParameterJdbcTemplate().queryForObject(rolequery, role, new UserRoleMapper());
+       
+       if (u.getValid() == 1){
+           return u;
+       } else {
+           throw new UserBlockedException("User Account is blocked. Please Contact to System Administrator");
+       }
+       } catch (EmptyResultDataAccessException ex) {
+           return null;
+       }
+    
     }
 
     @Override

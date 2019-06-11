@@ -31,8 +31,8 @@ public class TestUserDAOUpdateDatabase {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringRootConfig.class);
         usersDAO usrDao=ctx.getBean(usersDAO.class);
         Users user =new Users();
-        user.setId(2);
-        user.setUsername("rubel");
+        user.setId(8);
+        user.setUsername("patwary");
         user.setPassword("123");
         user.setFname("rubel");
         user.setLname("patwary");
