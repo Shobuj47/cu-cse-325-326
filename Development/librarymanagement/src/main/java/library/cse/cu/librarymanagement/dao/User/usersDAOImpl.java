@@ -30,8 +30,8 @@ public class usersDAOImpl extends baseDAO implements usersDAO{
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         String sqlquery = " INSERT INTO `libmanagment`.`users` "
                 + "(`username`, `password`, `fname`, `lname`, `email`, `address`, `cardno`, "
-                + "`birthdate`, `valid`, `validity`, `maxbookcount`, `borrowedbookcount`, `lastlogin`, `lastupdated`) 	"
-                + "VALUES (:username, :password, :fname, :lname, :email, :address, :cardno, :birthdate, :valid, "
+                + "`birthdate`, `role`, `valid`, `validity`, `maxbookcount`, `borrowedbookcount`, `lastlogin`, `lastupdated`) 	"
+                + "VALUES (:username, :password, :fname, :lname, :email, :address, :cardno, :birthdate, :role, :valid, "
                 + ":validity, :maxbookcount, :borrowedbookcount, :lastlogin, :lastupdated 	); " ;
         Map m = new HashMap();
         m.put("username", u.getUsername());
@@ -42,6 +42,7 @@ public class usersDAOImpl extends baseDAO implements usersDAO{
         m.put("address", u.getAddress());
         m.put("cardno", u.getCardno());
         m.put("birthdate", u.getBirthdate());
+        m.put("role", u.getRole());
         m.put("valid", u.getValid());
         m.put("validity", u.getValidity());
         m.put("maxbookcount", u.getMaxbookcount());
@@ -67,7 +68,7 @@ public class usersDAOImpl extends baseDAO implements usersDAO{
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         String sqlquery = "UPDATE `libmanagment`.`users` SET" +
         " `id` = :id, `username` = :username, `password` = :password, `fname` = :fname, `lname` = :lname, `email` = :email, " +
-        " `address` = :address, `cardno` = :cardno, `birthdate` = :birthdate, `valid` = :valid, `validity` = :validity, " +
+        " `address` = :address, `cardno` = :cardno, `birthdate` = :birthdate, `role` = :role, `valid` = :valid, `validity` = :validity, " +
         " `maxbookcount` = :maxbookcount, `borrowedbookcount` = :borrowedbookcount, `lastlogin` = :lastlogin, `lastupdated` = :lastupdated " +
         " WHERE " +
         " `id` = :id ;";
@@ -80,6 +81,7 @@ public class usersDAOImpl extends baseDAO implements usersDAO{
         m.put("address", u.getAddress());
         m.put("cardno", u.getCardno());
         m.put("birthdate", u.getBirthdate());
+        m.put("role", u.getRole());
         m.put("valid", u.getValid());
         m.put("validity", u.getValidity());
         m.put("maxbookcount", u.getMaxbookcount());
@@ -117,7 +119,7 @@ public class usersDAOImpl extends baseDAO implements usersDAO{
     public Users findById(Integer id) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         String sqlquery="SELECT 	`id`, `username`, `password`, `fname`, `lname`, `email`, " +
-                "`address`, `cardno`, `birthdate`, `valid`, `validity`, `maxbookcount`, " +
+                "`address`, `cardno`, `birthdate`, `role`, `valid`, `validity`, `maxbookcount`, " +
                 "`borrowedbookcount`, `lastlogin`, `lastupdated`\n" +
                 " FROM `libmanagment`.`users` WHERE `id`=?;";
         
@@ -130,7 +132,7 @@ public class usersDAOImpl extends baseDAO implements usersDAO{
     public List<Users> findALL() {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         String sqlquery="SELECT 	`id`, `username`, `password`, `fname`, `lname`, `email`, `address`, "
-                + "`cardno`, `birthdate`, `valid`, `validity`, `maxbookcount`, `borrowedbookcount`, "
+                + "`cardno`, `birthdate`, `role`, `valid`, `validity`, `maxbookcount`, `borrowedbookcount`, "
                 + "`lastlogin`, `lastupdated` FROM `libmanagment`.`users`;";
         List<Users> userList = getJdbcTemplate().query(sqlquery, new UserRowMapper());
         return userList;
@@ -140,7 +142,7 @@ public class usersDAOImpl extends baseDAO implements usersDAO{
     public List<Users> findByProperty(String propertyName, Object obj) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         String query="SELECT 	`id`, `username`, `password`, `fname`, `lname`, `email`, `address`, "
-                + "`cardno`, `birthdate`, `valid`, `validity`, `maxbookcount`, `borrowedbookcount`, "
+                + "`cardno`, `birthdate`, `role`, `valid`, `validity`, `maxbookcount`, `borrowedbookcount`, "
                 + "`lastlogin`, `lastupdated` FROM `libmanagment`.`users` WHERE "+ propertyName +"=?";
         List<Users> userList = getJdbcTemplate().query(query, new UserRowMapper(), obj);
         return userList;

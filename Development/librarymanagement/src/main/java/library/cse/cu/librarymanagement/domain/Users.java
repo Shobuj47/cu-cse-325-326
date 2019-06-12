@@ -20,7 +20,8 @@ public class Users {
     private String  email; 
     private String  address; 
     private String  cardno; 
-    private Date    birthdate; 
+    private Date    birthdate;
+    private String  role;
     private int     valid; 
     private Date    validity; 
     private int     maxbookcount; 
@@ -104,7 +105,15 @@ public class Users {
     public void setBirthdate(Date birthdate) {
         this.birthdate = birthdate;
     }
+    
+    public String getRole() {
+        return role;
+    }
 
+    public void setRole(String role) {
+        this.role = role;
+    }
+    
     public int getValid() {
         return valid;
     }

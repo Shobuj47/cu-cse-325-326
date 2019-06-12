@@ -15,6 +15,7 @@ library\cse\cu\librarymanagement\domain\Role.class
 library\cse\cu\librarymanagement\dao\role\roleDAO.class
 library\cse\cu\librarymanagement\dao\role\roleDAOImpl.class
 library\cse\cu\librarymanagement\rowmapper\RoleRowMapper.class
+library\cse\cu\librarymanagement\commands\UserLoginCommand.class
 library\cse\cu\librarymanagement\rowmapper\UserRowMapper.class
 library\cse\cu\librarymanagement\config\DispatcherServletInitializer.class
 library\cse\cu\librarymanagement\dao\User\usersDAOImpl.class

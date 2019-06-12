@@ -27,6 +27,7 @@ public class UserRowMapper implements RowMapper<Users>{
         user.setAddress(rs.getString("address"));
         user.setCardno(rs.getString("cardno"));
         user.setBirthdate(rs.getDate("birthdate"));
+        user.setRole(rs.getString("role"));
         user.setValid(rs.getInt("valid"));
         user.setValidity(rs.getDate("validity"));
         user.setMaxbookcount(rs.getInt("maxbookcount"));

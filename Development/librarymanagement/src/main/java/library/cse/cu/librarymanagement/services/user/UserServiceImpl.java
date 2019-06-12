@@ -35,22 +35,15 @@ public class UserServiceImpl extends baseDAO implements UserService{
     @Override
     public Users login(String username, String password) throws UserBlockedException {
        String userquery = "SELECT 	`id`,  `username`,  `fname`,  `lname`,  `email`,  `address`,  `cardno`,  "
-               + "`birthdate`,  `valid`,  `validity`,  `maxbookcount`,  `borrowedbookcount`,  `lastlogin`,  `lastupdated`   "
+               + "`birthdate`, `role`,  `valid`,  `validity`,  `maxbookcount`,  `borrowedbookcount`,  `lastlogin`,  `lastupdated`   "
                + "FROM  `libmanagment`.`users`  "
-               + "WHERE `username` = :LN `password` = :pwd ;";
+               + "WHERE `username` = :usr AND `password` = :pwd ;";
        Map m = new HashMap();
-       m.put("ln", username);
+       m.put("usr", username);
        m.put("pwd", password);
        
        try {
        Users u = getNamedParameterJdbcTemplate().queryForObject(userquery, m, new UserRowMapper());
-       //String rolequery = "SELECT 	`id`,  `userid`,  `roleid`   "
-       //       + "FROM  `libmanagment`.`userroles`  WHERE `userid` = :uid;";
-       //int userid= u.getId();
-       //Map role = new HashMap();
-       //role.put("uid", userid);
-       //Role r = getNamedParameterJdbcTemplate().queryForObject(rolequery, role, new UserRoleMapper());
-       
        if (u.getValid() == 1){
            return u;
        } else {

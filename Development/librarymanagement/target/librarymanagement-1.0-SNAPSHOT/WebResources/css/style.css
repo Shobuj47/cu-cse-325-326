@@ -16,7 +16,9 @@ body{
 
 .login-tbl{
     background-color: #9393936e;
-    width: 20%;
+    width: 100%;
     margin-top: 15%;
-    margin-left: 40%;
+    margin-left: 35%;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
