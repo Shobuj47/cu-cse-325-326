@@ -8,6 +8,7 @@ package library.cse.cu.librarymanagement.controller;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.http.HttpSession;
+import library.cse.cu.librarymanagement.commands.UserCommand;
 import library.cse.cu.librarymanagement.commands.UserLoginCommand;
 import library.cse.cu.librarymanagement.domain.Users;
 import library.cse.cu.librarymanagement.exceptions.UserBlockedException;
@@ -72,15 +73,11 @@ public class UserController {
     }
     
     private void addUserSession(Users u, HttpSession session){
-        session.setAttribute("user", u);
+        //session.setAttribute("user", u);
         session.setAttribute("uid", u.getId());
         session.setAttribute("fname", u.getFname());
         session.setAttribute("lname", u.getLname());
         session.setAttribute("role", u.getRole());
-    }
-    
-    private void destoryUserSession(HttpSession session){
-        session = null;
     }
     
     @RequestMapping(value = {"/logout"})
@@ -94,14 +91,41 @@ public class UserController {
         return "admin/admin_dashboard";
     }
     
-    
-    
     @RequestMapping(value = {"/user/dashboard", "/user"})
     public String userDashboard(){
         return "user/user_dashboard";
     }   
     
+    @RequestMapping(value = "admin/addUser")
+    public String addUser(Model m){
+        UserCommand cmd = new UserCommand();
+        m.addAttribute("cmdSaveNewUser", cmd);
+        return "admin/addUser";
+    }
     
+    @RequestMapping(value = "admin/saveNewUser")
+    public String saveUser(@ModelAttribute("cmdSaveNewUser") UserCommand cmd, Model m){
+        userService.RegisterUser(cmd.getUser());
+        m.addAttribute("cmdSaveNewUser", cmd);
+        m.addAttribute("msg", "New User Addess Successfully");
+        return "redirect:viewUsers?act=addnewuser";
+    }
+    
+    @RequestMapping(value = "admin/viewUsers")
+    public String addView(){
+        return "admin/viewUsers";
+    }
+    
+    
+    @RequestMapping(value = "admin/addBook")
+    public String addBook(){
+        return "admin/addBook";
+    }
+    
+    @RequestMapping(value = "admin/viewBooks")
+    public String viewBook(){
+        return "admin/viewBooks";
+    }
     
     
 }

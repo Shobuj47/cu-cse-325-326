@@ -1,9 +1,11 @@
+library\cse\cu\librarymanagement\commands\BookCommand.class
 library\cse\cu\librarymanagement\dao\books\booksDAO.class
 library\cse\cu\librarymanagement\rowmapper\BookRowMapper.class
 library\cse\cu\librarymanagement\config\SpringRootConfig.class
 library\cse\cu\librarymanagement\services\user\UserService.class
 library\cse\cu\librarymanagement\config\SpringWebConfig.class
 library\cse\cu\librarymanagement\dao\books\booksDAOImpl.class
+library\cse\cu\librarymanagement\commands\UserCommand.class
 library\cse\cu\librarymanagement\exceptions\UserBlockedException.class
 library\cse\cu\librarymanagement\services\user\UserServiceImpl.class
 library\cse\cu\librarymanagement\domain\Users.class

@@ -8,7 +8,10 @@
 <%@taglib uri="http://www.springframework.org/tags" prefix="s" %>
 
 <s:url var="url_logout" value="/logout" />
-
+<s:url var="url_addUser" value="/admin/addUser" />
+<s:url var="url_viewUser" value="/admin/viewUsers" />
+<s:url var="url_addBook" value="/admin/addBook" />
+<s:url var="url_viewBook" value="/admin/viewBooks" />
 
 <c:if test="${sessionScope.uid != null}">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,6 +31,18 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Receive Book</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="${url_addUser}">Add User</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="${url_viewUser}">View Users</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="${url_addBook}">Add Book</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="${url_viewBook}">View Books</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

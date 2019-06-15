@@ -44,7 +44,9 @@
                                         <c:if test="${err != null}">
                                             <p>${err}</p>
                                         </c:if>
-
+                                        <c:if test="${param.action == 'logout' && sessionScope.uid == null }">
+                                            <p class="text-success">Logout Successful</p>
+                                        </c:if>
                             </f:form>
                         </div>
                     </div>

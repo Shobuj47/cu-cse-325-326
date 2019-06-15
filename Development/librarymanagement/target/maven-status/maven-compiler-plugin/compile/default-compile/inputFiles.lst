@@ -10,11 +10,13 @@ G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-3
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\domain\Role.java
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\commands\UserLoginCommand.java
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\exceptions\UserBlockedException.java
+G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\commands\UserCommand.java
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\controller\UserController.java
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\rowmapper\UserRowMapper.java
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\services\user\UserService.java
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\dao\books\booksDAOImpl.java
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\domain\Book.java
+G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\commands\BookCommand.java
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\config\SpringRootConfig.java
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\dao\baseDAO.java
 G:\Studys\University\7th Semester\System Analysis & Design (LAB)\github\cu-cse-325-326\Development\librarymanagement\src\main\java\library\cse\cu\librarymanagement\dao\User\usersDAOImpl.java
