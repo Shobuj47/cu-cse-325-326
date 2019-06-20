@@ -16,7 +16,9 @@ public class Book {
     private String serialno; 
     private String bookname;
     private String publishername;
+    private String authorname;
     private Date publishdate; 
+    
 
     public int getId() {
         return id;
@@ -50,6 +52,14 @@ public class Book {
         this.publishername = publishername;
     }
 
+    public String getAuthorname() {
+        return authorname;
+    }
+
+    public void setAuthorname(String authorname) {
+        this.authorname = authorname;
+    }
+    
     public Date getPublishdate() {
         return publishdate;
     }

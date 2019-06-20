@@ -10,8 +10,8 @@
 <s:url var="url_logout" value="/logout" />
 <s:url var="url_addUser" value="/admin/addUser" />
 <s:url var="url_viewUser" value="/admin/viewUsers" />
-<s:url var="url_addBook" value="/admin/addBook" />
-<s:url var="url_viewBook" value="/admin/viewBooks" />
+<s:url var="url_addBook" value="/book/addBook" />
+<s:url var="url_viewBook" value="/book/viewBooks" />
 
 <c:if test="${sessionScope.uid != null}">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">

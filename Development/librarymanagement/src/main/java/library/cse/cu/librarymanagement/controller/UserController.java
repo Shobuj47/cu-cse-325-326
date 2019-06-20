@@ -42,9 +42,6 @@ public class UserController {
         try {
             Users user = userService.login(cmd.getUsername(), cmd.getPassword());
             if (user != null){
-                System.out.println("################################################################");
-                System.out.println("User"+ user.getUsername().toString() +" Found Detecting Role " + user.getRole().toString());
-                System.out.println("################################################################");
                 switch (user.getRole()) {
                     case "Admin":
                         addUserSession(user, session);
@@ -115,17 +112,5 @@ public class UserController {
     public String addView(){
         return "admin/viewUsers";
     }
-    
-    
-    @RequestMapping(value = "admin/addBook")
-    public String addBook(){
-        return "admin/addBook";
-    }
-    
-    @RequestMapping(value = "admin/viewBooks")
-    public String viewBook(){
-        return "admin/viewBooks";
-    }
-    
-    
+        
 }

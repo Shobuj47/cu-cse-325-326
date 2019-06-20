@@ -7,7 +7,6 @@ package library.cse.cu.librarymanagement.services.user;
 import java.util.List;
 import library.cse.cu.librarymanagement.domain.Users;
 import library.cse.cu.librarymanagement.exceptions.UserBlockedException;
-import org.springframework.stereotype.Service;
 
 /**
  *

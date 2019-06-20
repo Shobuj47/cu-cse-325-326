@@ -28,13 +28,14 @@ public class booksDAOImpl extends baseDAO implements booksDAO {
     public void saveBook(Book book) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
          String sqlquery = " INSERT INTO `libmanagment`.`books`" +
-        "(`id`,	`serialno`, `bookname`, `publishername`, `publishdate`)" +
-        "VALUES (:id, :serialno, :bookname, :publishername, :publishdate );" ;
+        "(`id`,	`serialno`, `bookname`, `publishername`, `authorname`, `publishdate`)" +
+        "VALUES (:id, :serialno, :bookname, :publishername, :authorname, :publishdate );" ;
         Map m = new HashMap();
         m.put("id", book.getId());
         m.put("serialno", book.getSerialno());
         m.put("bookname", book.getBookname());
         m.put("publishername", book.getPublishername());
+        m.put("authorname", book.getAuthorname());
         m.put("publishdate", book.getPublishdate());
         
         KeyHolder kh = new GeneratedKeyHolder();
@@ -51,13 +52,14 @@ public class booksDAOImpl extends baseDAO implements booksDAO {
     public void updateBook(Book book) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         String sqlquery="UPDATE `libmanagment`.`books`  SET `id` = :id,  `serialno` = :serialno,  "
-                + "`bookname` = :bookname,  `publishername` = :publishername,  `publishdate` = :publishdate  "
+                + "`bookname` = :bookname, `publishername` = :publishername, `authorname` = :authorname  `publishdate` = :publishdate  "
                 + "WHERE `id` = :id ;";
         Map map = new HashMap();
         map.put("id", book.getId());
         map.put("serialno", book.getSerialno());
         map.put("bookname", book.getBookname());
         map.put("publishername", book.getPublishername());
+        map.put("authorname", book.getAuthorname());
         map.put("publishdate", book.getPublishdate());
         
        getNamedParameterJdbcTemplate().update(sqlquery, map);
@@ -80,7 +82,7 @@ public class booksDAOImpl extends baseDAO implements booksDAO {
     @Override
     public Book findById(Integer id) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        String sqlquery ="SELECT 	`id`,  `serialno`,  `bookname`,  `publishername`,  `publishdate`   FROM  `libmanagment`.`books`  WHERE `id` = ? ;";
+        String sqlquery ="SELECT 	`id`,  `serialno`,  `bookname`,  `publishername`, `authorname`,  `publishdate`   FROM  `libmanagment`.`books`  WHERE `id` = ? ;";
         Book book = getJdbcTemplate().queryForObject(sqlquery, new BookRowMapper(), id);
         return book;
     }
@@ -88,7 +90,7 @@ public class booksDAOImpl extends baseDAO implements booksDAO {
     @Override
     public List<Book> findALL() {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        String sqlquery ="SELECT 	`id`,  `serialno`,  `bookname`,  `publishername`,  `publishdate`   FROM  `libmanagment`.`books`;";
+        String sqlquery ="SELECT 	`id`,  `serialno`,  `bookname`,  `publishername`, `authorname`,  `publishdate`   FROM  `libmanagment`.`books`;";
         List<Book> books = getJdbcTemplate().query(sqlquery, new BookRowMapper());
         return books;
     }
@@ -96,7 +98,7 @@ public class booksDAOImpl extends baseDAO implements booksDAO {
     @Override
     public List<Book> findByProperty(String propertyName, Object obj) {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        String sqlquery ="SELECT 	`id`,  `serialno`,  `bookname`,  `publishername`,  `publishdate`   "
+        String sqlquery ="SELECT 	`id`,  `serialno`,  `bookname`,  `publishername`, `authorname`,  `publishdate`   "
                 + "FROM  `libmanagment`.`books` WHERE "+ propertyName +" = ? ;";
         List<Book> books = getJdbcTemplate().query(sqlquery, new BookRowMapper(), obj);
         return books;

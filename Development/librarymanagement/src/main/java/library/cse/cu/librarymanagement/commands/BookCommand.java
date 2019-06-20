@@ -5,10 +5,23 @@
  */
 package library.cse.cu.librarymanagement.commands;
 
+import library.cse.cu.librarymanagement.domain.Book;
+
 /**
  *
  * @author Agent47
  */
 public class BookCommand {
+    Book book;
+
+    public Book getBook() {
+        return book;
+    }
+
+    public void setBook(Book book) {
+        this.book = book;
+    }
+    
+    
     
 }
