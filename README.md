@@ -18,7 +18,7 @@ Contains Documents of System Analysis &amp; Design for the City University of Ba
 #### 3. [Library Management](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Development/librarymanagement)
 <br/>
 
-## [LAB Practical Projects Documents Final Semester | CSE-326](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Documents/cse-326)
+## [LAB Practical Projects Documents Final Semester | CSE-326](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Documents/cse-326/Final)
 #### 1. [Library Management Documents](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Documents/cse-326/Final)
-#### 2. [Library Management System Report](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/Library%20Management.pdf)
-#### 3. [Library Management System Presentation](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/LMS%20Presentation.pptx)
+#### 2. [Library Management System Report](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/Library%20Management%20Report.pdf)
+#### 3. [Library Management System Presentation](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/Library%20Management%20Presentation.pptx)
