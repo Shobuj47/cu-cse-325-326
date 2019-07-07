@@ -4,18 +4,18 @@
 <br/><br/>
 
 # Final Project Files
-## 2.0 [Library Management Source Codes](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Development/librarymanagement)
+## 2.0 [Library Management (Source Codes)](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Development/librarymanagement)
 ### 2.1 [Library Management Documents](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Documents/cse-326/Final)
-### 2.2 [Library Management System Report](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/Library%20Management%20Report.pdf)
-### 3.3 [Library Management System Presentation](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/Library%20Management%20Presentation.pptx)
+### 2.2 [Library Management System Report (PDF)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/Library%20Management%20Report.pdf)
+### 3.3 [Library Management System Presentation (Presentation File)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/Library%20Management%20Presentation.pptx)
 <br/><br/>
 
 # Theory Assignment
-## 3. [Agile Methodology Documentations](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-325/Midterm/Agile%20Methodology.pdf)
-## 4. [ATM Activity Diagram](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-325/Final/Assignment-1.pdf)
+## 3. [Agile Methodology Documentations (PDF)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-325/Midterm/Agile%20Methodology.pdf)
+## 4. [ATM Activity Diagram (PDF)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-325/Final/Assignment-1.pdf)
 
 # LAB Assignment
-## 6. [LAB 2](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Development/Final-LAB-01/src)
+## 6. [LAB 2 (Source Codes)](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Development/Final-LAB-01/src)
 
 
 
