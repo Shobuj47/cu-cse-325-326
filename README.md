@@ -12,7 +12,7 @@
 
 # Theory Assignment
 ## 3. [Agile Methodology Documentations (PDF)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-325/Midterm/Agile%20Methodology.pdf)
-## 4. [ATM Activity Diagram (PDF)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-325/Final/Assignment-1.pdf)
+## 4. [ATM Activity & Sequence Diagram (PDF)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-325/Final/Assignment-1.pdf)
 
 # LAB Assignment
 ## 6. [LAB 2 (Source Codes)](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Development/Final-LAB-01/src)
