@@ -15,11 +15,12 @@
 ## 4. [ATM Activity & Sequence Diagram (PDF)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-325/Final/Assignment-1.pdf)
 
 # LAB Assignment
+## 5. [LAB 1 (PDF)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/LAB-2%20Aggregation.pdf)
 ## 6. [LAB 2 (Source Codes)](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Development/Final-LAB-01/src)
 
 
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 # CU-CSE-325-326
