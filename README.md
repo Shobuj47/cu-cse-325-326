@@ -7,7 +7,7 @@
 ## 2.0 [Library Management (Source Codes)](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Development/librarymanagement)
 ### 2.1 [Library Management Documents](https://github.com/Shobuj47/cu-cse-325-326/tree/master/Documents/cse-326/Final)
 ### 2.2 [Library Management System Report (PDF)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/Library%20Management%20Report.pdf)
-### 3.3 [Library Management System Presentation (Presentation File)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/Library%20Management%20Presentation.pptx)
+### 2.3 [Library Management System Presentation (Presentation File)](https://github.com/Shobuj47/cu-cse-325-326/blob/master/Documents/cse-326/Final/Library%20Management%20Presentation.pptx)
 <br/><br/>
 
 # Theory Assignment
